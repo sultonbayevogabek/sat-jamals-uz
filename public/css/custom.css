@@ -1,0 +1,55 @@
+@font-face {
+  font-display: swap;
+  font-family: 'Bebas Neue';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/bebas_neue.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'SF Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/sf_pro_400.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'SF Pro';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/sf_pro_500.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'SF Pro';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/sf_pro_600.woff2') format('woff2');
+}
+
+.bebas-neue {
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: 400;
+}
+
+.sf-pro-400 {
+  font-family: 'SF Pro', sans-serif;
+  font-weight: 400;
+}
+
+.sf-pro-500 {
+  font-family: 'SF Pro', sans-serif;
+  font-weight: 500;
+}
+
+.sf-pro-600 {
+  font-family: 'SF Pro', sans-serif;
+  font-weight: 600;
+}
+
+body {
+  font-family: "SF Pro", sans-serif;
+}
