@@ -52,4 +52,26 @@
 
 body {
   font-family: "SF Pro", sans-serif;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.main-bg {
+  background-image: url("../img/bg_main@1x.jpg");
+}
+
+.telegram-bg {
+  background-image: url("../img/bg_telegram@1x.jpg");
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .main-bg {
+    background-image: url("../img/bg_main@2x.jpg");
+  }
+
+  .telegram-bg {
+    background-image: url("../img/bg_telegram@2x.jpg");
+  }
 }
