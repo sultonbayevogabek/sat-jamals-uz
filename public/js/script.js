@@ -67,32 +67,3 @@ try {
     })
 } catch (e) {
 }
-
-
-const url = 'https://voicerss-text-to-speech.p.rapidapi.com/?key=%3CREQUIRED%3E';
-const options = {
-    method: 'POST',
-    headers: {
-        'content-type': 'application/x-www-form-urlencoded',
-        'X-RapidAPI-Key': '4008893a79msh51b668c65f6f357p170956jsn28e222d14bd9',
-        'X-RapidAPI-Host': 'voicerss-text-to-speech.p.rapidapi.com'
-    },
-    body: new URLSearchParams({
-        src: 'Hello, world!',
-        hl: 'en-us',
-        r: '0',
-        c: 'mp3',
-        f: '8khz_8bit_mono'
-    })
-};
-
-
-(async () => {
-    try {
-        const response = await fetch(url, options);
-        const result = await response.text();
-        console.log(result);
-    } catch (error) {
-        console.error(error);
-    }
-})()
