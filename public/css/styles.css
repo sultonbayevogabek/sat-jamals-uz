@@ -816,6 +816,18 @@ video {
   right: 5%;
 }
 
+.bottom-\[170px\] {
+  bottom: 170px;
+}
+
+.right-0 {
+  right: 0px;
+}
+
+.right-1 {
+  right: 0.25rem;
+}
+
 .z-10 {
   z-index: 10;
 }
