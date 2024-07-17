@@ -764,6 +764,10 @@ video {
   top: -0.875rem;
 }
 
+.order-1 {
+  order: 1;
+}
+
 .m-0 {
   margin: 0px;
 }
@@ -1104,6 +1108,10 @@ video {
 
   .lg\:-top-5 {
     top: -1.25rem;
+  }
+
+  .lg\:order-none {
+    order: 0;
   }
 
   .lg\:block {
