@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body class="main-bg px-3 overflow-x-hidden">
-<div class="container mx-auto">
+    <div class="container mx-auto">
     <div class="flex flex-col min-h-screen lg:pr-[50%] py-3 lg:py-5">
         <div class="flex lg:inline-flex items-center justify-between lg:justify-start lg:self-start gap-3 py-2.5 lg:py-4 px-3.5 lg:px-5 radial-gradient rounded-xl lg:rounded-2xl border border-white border-opacity-30">
             <div class="flex items-center gap-3 lg:text-xl text-white text-opacity-40 leading-none">
@@ -48,6 +48,7 @@
                 </div>
 
                 <button
+                        data-main-button
                         class="w-full h-16 rounded-full button-gradient bebas-neue text-[28px]">
                     JOY BAND QILISH
                 </button>
@@ -99,6 +100,7 @@
 
             <div class="relative hidden lg:block">
                 <button
+                        data-main-button
                         class="lg:w-3/4 h-20 rounded-full button-gradient bebas-neue text-[32px]">
                     JOY BAND QILISH
                 </button>
@@ -112,5 +114,33 @@
         </div>
     </div>
 </div>
+
+    <div class="fixed inset-0 grid place-items-center p-3 overflow-auto z-20 bg-black bg-opacity-50 hidden" data-modal-backdrop data-modal-close>
+        <form data-form class="w-full max-w-[520px] p-5 lg:p-10 bg-white rounded-[8px] lg:rounded-[12px] relative">
+            <h2 class="mb-4 lg:mb-6 bebas-neue text-[28px] lg:text-4xl uppercase">Ro'yxatdan <span>o'tish</span></h2>
+
+            <div class="p-4 mb-2 lg:mb-4 text-red-800 rounded-lg bg-red-50 text-center hidden" data-form-alert>
+            </div>
+
+            <label class="block w-full mb-4 lg:mb-6">
+                <span class="block mb-1.5 sf-pro-400 text-[#48635B]">Ism</span>
+                <input class="w-full h-12 px-4 rounded-[12px] bg-[#F3F7F8] border border-[#bed4da]" id="name" type="text" placeholder="Ismingizni kiriting" name="name">
+            </label>
+
+            <label class="block w-full mb-4 lg:mb-6">
+                <span class="block mb-1.5 sf-pro-400 text-[#48635B]">Telefon raqami</span>
+                <input class="w-full h-12 px-4 rounded-[12px] bg-[#F3F7F8] border border-[#bed4da]" id="phone" type="tel" value="+998" name="phone">
+            </label>
+
+            <button data-form-button class="w-full h-14 lg:h-16 mt-5 rounded-full bebas-neue text-2xl lg:text-[28px] uppercase button-gradient" type="submit">
+                Yuborish
+            </button>
+
+            <img data-modal-close class="w-3 lg:w-4 aspect-square absolute top-6 right-6 cursor-pointer" src="img/x.svg" alt="close icon">
+        </form>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script src="js/mask.js"></script>
 </body>
 </html>
