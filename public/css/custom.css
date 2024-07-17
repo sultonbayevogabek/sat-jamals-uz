@@ -76,6 +76,28 @@ body {
   }
 }
 
+@media only screen and (max-width: 1024px) {
+  .main-bg {
+    background-image: url("../img/mobile_main_bg@1x.jpg");
+  }
+
+  .telegram-bg {
+    background-image: url("../img/mobile_telegram_bg@1x.jpg");
+  }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  @media only screen and (max-width: 1024px) {
+    .main-bg {
+      background-image: url("../img/mobile_main_bg@2x.jpg");
+    }
+
+    .telegram-bg {
+      background-image: url("../img/mobile_telegram_bg@2x.jpg");
+    }
+  }
+}
+
 .radial-gradient {
   background-image: radial-gradient(at 50% 250%, #FFD3A140, #FEFFD302);
 }
