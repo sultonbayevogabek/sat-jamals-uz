@@ -11,7 +11,7 @@ if (user && user?.name && user?.phone && user?.time) {
         method: 'POST',
         body: formData
     })
-        .then(res => res.json())
+        .then()
         .then(() => {
             localStorage.clear();
         })
